@@ -1,0 +1,11 @@
+School Admin Account:
+User Name: admin
+Password: admin
+
+Teacher Account:
+User Name: teacher
+Password: teacher
+
+Student Account:
+User Name: student
+Password: student

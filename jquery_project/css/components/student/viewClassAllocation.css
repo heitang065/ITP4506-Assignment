@@ -1,0 +1,11 @@
+.view-class-allocation-container{
+    width: 100%;
+}
+
+.view-class-allocation-container > h4{
+    margin-bottom: 20px;
+}
+
+/* .jqx-scheduler-edit-dialog-field button{
+    display: none !important;
+} */

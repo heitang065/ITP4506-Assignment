@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../../css/components/student/createBooking.css"
+    />
+  </head>
+  <body>
+    <div class="room-booking-container">
+        <form id="create-booking">
+            <h4 class="title">Room Booking Form</h4><br>
+            <div class="form-text">Your ID: </div>200000001
+            <div class="form-text">Role: </div>Student
+            <div class="form-text">Email: </div>harrypotter@gmail.com
+            <div class="form-text">Phone: </div>21232123
+            <div class="form-text">You are now booking: </div><b>Principal Room</b>
+            <div class="form-text">
+                <label for="remark" class="form-label"
+                  >Remark: </label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="remark"
+                />
+              </div>
+            <div class="mb-3">
+                <label for="" class="form-text">Time: </label><br>
+                <label for="" class="form-text">Before Noon</label><br>
+                <div class="time-container">
+                    <label for="timeSelect1" class="time">10:30am
+                        <input
+                            type="radio"
+                            name="timeSelect"
+                            class="timeSelect"
+                            hidden
+                            required
+                        />
+                    </label>
+                    <label for="timeSelect2" class="time">11:30am
+                        <input
+                            type="radio"
+                            name="timeSelect"
+                            class="timeSelect"
+                            hidden
+                            required
+                        />
+                    </label>
+                    <label for="timeSelect3" class="time">12:30pm
+                        <input
+                            type="radio"
+                            name="timeSelect"
+                            class="timeSelect"
+                            hidden
+                            required
+                        />
+                    </label>
+                </div>
+                
+                <label for="" class="form-text">Afternoon</label><br>
+                <div class="time-container">
+                    <label for="timeSelect4" class="time">2:30pm
+                        <input
+                            type="radio"
+                            name="timeSelect"
+                            class="timeSelect"
+                            hidden
+                            required
+                        />
+                    </label>
+                    <label for="timeSelect5" class="time">3:30pm
+                        <input
+                            type="radio"
+                            name="timeSelect"
+                            class="timeSelect"
+                            hidden
+                            required
+                        />
+                    </label>
+                    <label for="timeSelect6" class="time">4:30pm
+                        <input
+                            type="radio"
+                            name="timeSelect"
+                            class="timeSelect"
+                            hidden
+                            required
+                        />
+                    </label>
+                </div>
+                <p>Important! Teacher's booking must be first priority!</p>
+            </div>
+            <a href="../student/roomBookingMenu.html" class="btn-submit"><button type="submit" class="btn btn-primary">Submit Booking</button></a>
+        </form>       
+ 
+        <script src="../../js/components/student/createBooking.js"></script>
+
+  </body>
+</html>

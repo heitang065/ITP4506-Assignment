@@ -1,0 +1,74 @@
+.generate-school-report-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    width: 100vw;
+}
+
+.title{
+    text-decoration: underline;
+}
+
+.school-report-pie-chart > h3{
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#school-report{
+    padding-top: 15px;
+}
+
+.dataTables_wrapper{
+    width: 100%;
+    overflow-x: scroll;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dataTables_wrapper > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dt-buttons{
+    margin-bottom: 20px;
+}
+
+.dt-button{
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: royalblue;
+    transition: .15s ease-in-out;
+}
+
+.dt-button:hover{
+    box-shadow: rgb(11, 94, 105) inset 5px 5px 15px;
+    text-shadow: 1px 1px 15px;
+}
+
+.class-detail-btn{
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: royalblue;
+    transition: .15s ease-in-out;
+}
+
+.class-detail-btn:hover{
+    box-shadow: rgb(11, 94, 105) inset 5px 5px 15px;
+    text-shadow: 1px 1px 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .school-report-pie-chart{
+        width: 550px;
+        height: 550px;
+    }
+}

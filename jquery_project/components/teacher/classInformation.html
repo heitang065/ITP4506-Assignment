@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../css/components/teacher/classInformation.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="class-information-container">
+      <div class="modal-btns">
+        <!-- Button trigger modal -->
+        <button
+          id="edit-class-information-btn"
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-class-information-modal"
+        >
+          Edit class information
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="edit-class-information-modal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Edit Class Information
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="edit-class-information-form">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Class Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Edit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button
+          id="add-student-to-class-btn"
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#add-student-to-class-modal"
+        >
+          Add student
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="add-student-to-class-modal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Add new student
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="add-new-student-class-form">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Student ID</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="studentID"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+        id="Delete Class"
+        type="button"
+        class="btn delete-class-btn"
+        style="background-color: rgb(173, 0, 0);color: #fff;"
+      >
+        Delete Class
+      </button>
+      </div>
+      <div class="class-detail">
+        <span>Class : 2B</span>
+        <span>Teacher : Dumbledore</span>
+        <span>Total Student : 2</span>
+      </div>
+      <table
+        id="class-information"
+        class="table table-striped"
+        style="width: 100%"
+      >
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Class</th>
+            <th>Name</th>
+            <th>BirthDay</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>200000001</td>
+            <td>2B</td>
+            <td>Harry Potter</td>
+            <td>2000/01/01</td>
+            <td>TY</td>
+            <td>harryPotter@gmail.com</td>
+            <td>21232123</td>
+            <td><button class="remove-student-btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>200000002</td>
+            <td>2B</td>
+            <td>Harry</td>
+            <td>2000/02/02</td>
+            <td>TY</td>
+            <td>harry@gmail.com</td>
+            <td>31233123</td>
+            <td><button class="remove-student-btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>200000003</td>
+            <td>2B</td>
+            <td>Marry</td>
+            <td>2000/06/09</td>
+            <td>TY</td>
+            <td>marry@gmail.com</td>
+            <td>23123122</td>
+            <td><button class="remove-student-btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>200000004</td>
+            <td>2B</td>
+            <td>Berry</td>
+            <td>2000/08/02</td>
+            <td>TY</td>
+            <td>berry@gmail.com</td>
+            <td>21323123</td>
+            <td><button class="remove-student-btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>200000005</td>
+            <td>2B</td>
+            <td>Terry</td>
+            <td>2000/06/04</td>
+            <td>TY</td>
+            <td>terry@gmail.com</td>
+            <td>12323231</td>
+            <td><button class="remove-student-btn">Remove</button></td>
+          </tr>
+          <tfoot>
+            <tr>
+              <th>Student ID</th>
+              <th>Class</th>
+              <th>Name</th>
+              <th>BirthDay</th>
+              <th>Address</th>
+              <th>Email</th>
+              <th>Phone</th>
+            </tr>
+          </tfoot>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="../../js/components/teacher/classInformation.js"></script>
+  </body>
+</html>

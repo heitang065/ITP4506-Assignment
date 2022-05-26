@@ -1,0 +1,25 @@
+.dataTables_wrapper{
+    width: 100%;
+    overflow-x: scroll;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dataTables_wrapper > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.dt-buttons{
+    margin-bottom: 20px;
+}
+
+.dt-button{
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: royalblue
+}

@@ -1,0 +1,42 @@
+.attendance-table-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#date-searching > tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.dataTables_wrapper{
+    width: 100%;
+    overflow-x: scroll;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dataTables_wrapper > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#upload-file-btn{
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: royalblue;
+    transition: .15s ease-in-out;
+}
+
+#upload-file-btn:hover{
+    box-shadow: rgb(11, 94, 105) inset 5px 5px 15px;
+    text-shadow: 1px 1px 15px;
+}

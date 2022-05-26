@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../css/components/admin/viewUsersPage.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="users" class="table table-striped" style="width: 100%">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Gender</th>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Class</th>
+          <th>BirthDay</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>200000001</td>
+          <td>Male</td>
+          <td>Harry Potter</td>
+          <td>Student</td>
+          <td>2B</td>
+          <td>2000/01/01</td>
+          <td>TY</td>
+          <td>harryPotter@gmail.com</td>
+          <td>21232123</td>
+          <td><button class="ban-account-btn">Disable</button></td>
+        </tr>
+        <tr>
+          <td>200000001</td>
+          <td>Male</td>
+          <td>Harry</td>
+          <td>Student</td>
+          <td>2B</td>
+          <td>2000/01/01</td>
+          <td>TY</td>
+          <td>harry@gmail.com</td>
+          <td>12345678</td>
+          <td><button class="ban-account-btn">Disable</button></td>
+        </tr>
+        <tr>
+          <td>239800001</td>
+          <td>Male</td>
+          <td>Dumbledore</td>
+          <td>Teacher</td>
+          <td>1A,2B</td>
+          <td>1950/01/01</td>
+          <td>Hogwarts</td>
+          <td>Dumbledore@gmail.com</td>
+          <td>3123123</td>
+          <td><button class="ban-account-btn">Disable</button></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>239800001</td>
+          <td>Male</td>
+          <td>Dumbledore</td>
+          <td>Teacher</td>
+          <td>1A,2B</td>
+          <td>1950/01/01</td>
+          <td>Hogwarts</td>
+          <td>Dumbledore@gmail.com</td>
+          <td>3123123</td>
+          <td><button class="ban-account-btn">Disable</button></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div
+      class="modal fade"
+      id="create-account-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Create new account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="create-account-form">
+              <div class="mb-3">
+                <label for="role">Role</label>
+                <select
+                  id="role"
+                  class="form-select"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected disabled>Select a role</option>
+                  <option value="teacher">teacher</option>
+                  <option value="2">student</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label"
+                  >Username</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required/>
+              </div>
+              <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/components/admin/viewUsersPage.js"></script>
+  </body>
+</html>

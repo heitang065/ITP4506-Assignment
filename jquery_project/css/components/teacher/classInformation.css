@@ -1,0 +1,49 @@
+.class-information-container{
+    overflow-x: auto;
+}
+
+.class-information-container .modal-btns{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.class-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#class-information{
+    padding-top: 15px;
+}
+
+#class-information .remove-student-btn{
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(173, 0, 0);
+}
+
+.dataTables_wrapper{
+    overflow-x: scroll;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dt-buttons{
+    margin-bottom: 20px;
+}
+
+.dt-button{
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: royalblue
+}

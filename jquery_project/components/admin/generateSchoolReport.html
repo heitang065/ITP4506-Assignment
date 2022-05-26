@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../css/components/admin/generateGenerateReport.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="generate-school-report-container">
+      <div class="school-report-pie-chart">
+        <h3>2021 School Report - Pie Chart</h3>
+        <canvas id="myChart"></canvas>
+      </div>
+      <canvas id="lineChart" style="background-color: #fff;"></canvas>
+
+      <table id="school-report" class="table table-striped" style="width: 100%">
+        <h4 class="title">All Classes</h4>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Class</th>
+            <th>Number of students</th>
+            <th>Attendance rate</th>
+            <th>Absent rate</th>
+            <th>Sick leave rate</th>
+            <th>Late rate</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-01-01</td>
+            <td>2B</td>
+            <td>126</td>
+            <td>92%</td>
+            <td>2%</td>
+            <td>6%</td>
+            <td>7%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2021-01-02</td>
+            <td>2B</td>
+            <td>126</td>
+            <td>95%</td>
+            <td>3%</td>
+            <td>2%</td>
+            <td>1%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2021-01-03</td>
+            <td>2B</td>
+            <td>126</td>
+            <td>99%</td>
+            <td>0%</td>
+            <td>1%</td>
+            <td>7%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2020-01-01</td>
+            <td>2B</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2019-01-01</td>
+            <td>1B</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2018-01-01</td>
+            <td>2B</td>
+            <td>126</td>
+            <td>92%</td>
+            <td>2%</td>
+            <td>6%</td>
+            <td>7%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2017-01-01</td>
+            <td>2B</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2019-01-01</td>
+            <td>3B</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2021-01-01</td>
+            <td>4A</td>
+            <td>126</td>
+            <td>92%</td>
+            <td>2%</td>
+            <td>6%</td>
+            <td>7%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2020-01-01</td>
+            <td>5D</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2019-01-01</td>
+            <td>6C</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2021-01-01</td>
+            <td>6A</td>
+            <td>126</td>
+            <td>92%</td>
+            <td>2%</td>
+            <td>6%</td>
+            <td>7%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2020-01-01</td>
+            <td>4B</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2019-01-01</td>
+            <td>3C</td>
+            <td>126</td>
+            <td>97%</td>
+            <td>1%</td>
+            <td>2%</td>
+            <td>3%</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary class-detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#classDetailModal"
+              >
+                Class Detail
+              </button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Grade</th>
+            <th>Class</th>
+            <th>Number of students</th>
+            <th>Attendance rate</th>
+            <th>Absent rate</th>
+            <th>Sick leave rate</th>
+            <th>Late rate</th>
+          </tr>
+        </tfoot>
+      </table>
+
+      <table id="absent" class="table table-striped" style="width: 100%">
+        <h4 class="title">Absent Record</h4>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Student ID</th>
+            <th>Class</th>
+            <th>Name</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-01-01</td>
+            <td>200000001</td>
+            <td>2B</td>
+            <td>Harry Potter</td>
+            <td>Skip School</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Date</th>
+            <th>Student ID</th>
+            <th>Class</th>
+            <th>Name</th>
+          </tr>
+        </tfoot>
+      </table>
+  
+      <table id="sick-leave" class="table table-striped" style="width: 100%">
+        <h4 class="title">Sick Leave Record</h4>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Student ID</th>
+            <th>Class</th>
+            <th>Name</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-01-01</td>
+            <td>200000001</td>
+            <td>2B</td>
+            <td>Harry Potter</td>
+            <td>feel dizzy</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Date</th>
+            <th>Student ID</th>
+            <th>Class</th>
+            <th>Name</th>
+          </tr>
+        </tfoot>
+      </table>
+
+      <table id="late" class="table table-striped" style="width: 100%">
+        <h4 class="title">Late Record</h4>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Arrival Time</th>
+            <th>Student ID</th>
+            <th>Class</th>
+            <th>Name</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-01-01</td>
+            <td>09:32:51</td>
+            <td>200000001</td>
+            <td>2B</td>
+            <td>Harry Potter</td>
+            <td>stay up late</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Date</th>
+            <th>Arrival Time</th>
+            <th>Student ID</th>
+            <th>Class</th>
+            <th>Name</th>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div
+        class="modal fade"
+        id="classDetailModal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">
+                Class 2B Students
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <table
+                id="class-student-record"
+                class="table table-striped"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>Student ID</th>
+                    <th>Gender</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Attendance</th>
+                    <th>Absent</th>
+                    <th>Sick leave</th>
+                    <th>Late</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>200000001</td>
+                    <td>Male</td>
+                    <td>Harry Potter</td>
+                    <td>21232123</td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" disabled></td>
+                    <td><input type="checkbox" disabled></td>
+                    <td><input type="checkbox" checked disabled></td>
+                  </tr>
+                  <tr>
+                    <td>200000002</td>
+                    <td>Male</td>
+                    <td>Harry</td>
+                    <td>31233123</td>
+                    <td><input type="checkbox" disabled></td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" disabled></td>
+                    <td><input type="checkbox" disabled></td>
+                  </tr>
+                  <tr>
+                    <td>200000003</td>
+                    <td>Male</td>
+                    <td>Andrey</td>
+                    <td>3123123</td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" disabled></td>
+                    <td><input type="checkbox" disabled></td>
+                    <td><input type="checkbox" disabled></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Student ID</th>
+                    <th>Gender</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Attendance</th>
+                    <th>Absent</th>
+                    <th>Sick leave</th>
+                    <th>Late</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/components/admin/generateSchoolReport.js"></script>
+  </body>
+</html>

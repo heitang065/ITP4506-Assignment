@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/components/admin/viewUsersPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <table id="students-attendance" class="table table-striped" style="width: 100%">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Arrival Time</th>
+                <th>Student ID</th>
+                <th>Class</th>
+                <th>Name</th>
+                <th>Attendance</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2021-01-01</td>
+                <td>07:52:01</td>
+                <td>200000001</td>
+                <td>2B</td>
+                <td>Harry Potter</td>
+                <td>Yes</td>
+                <td>
+                    <select name="attendanceStatus" class="attendanceStatus">
+                        <option value="Present" selected>Present</option>
+                        <option value="Sick Leave">Sick Leave</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>2021-01-01</td>
+                <td>07:45:01</td>
+                <td>200000002</td>
+                <td>2B</td>
+                <td>Peter</td>
+                <td>Yes</td>
+                <td>
+                    <select name="attendanceStatus" class="attendanceStatus">
+                        <option value="Present" selected>Present</option>
+                        <option value="Sick Leave">Sick Leave</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>2021-01-02</td>
+                <td>\</td>
+                <td>200000003</td>
+                <td>2A</td>
+                <td>Harry</td>
+                <td>No</td>
+                <td>
+                    <select name="attendanceStatus" class="attendanceStatus">
+                        <option value="Present">Present</option>
+                        <option value="Sick Leave" selected>Sick Leave</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>2021-01-02</td>
+                <td>07:52:01</td>
+                <td>200000001</td>
+                <td>2B</td>
+                <td>Harry Potter</td>
+                <td>Yes</td>
+                <td>
+                    <select name="attendanceStatus" class="attendanceStatus">
+                        <option value="Present" selected>Present</option>
+                        <option value="Sick Leave">Sick Leave</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>2021-01-02</td>
+                <td>\</td>
+                <td>200000001</td>
+                <td>2B</td>
+                <td>Marry</td>
+                <td>No</td>
+                <td>
+                    <select name="attendanceStatus" class="attendanceStatus">
+                        <option value="Present">Present</option>
+                        <option value="Sick Leave" selected>Sick Leave</option>
+                      </select>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Date</th>
+                <th>Arrival Time</th>
+                <th>Student ID</th>
+                <th>Class</th>
+                <th>Name</th>
+                <th>Attendance</th>
+                <th>Status</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="../../js/components/admin/studentAttendance.js"></script>
+</body>
+</html>

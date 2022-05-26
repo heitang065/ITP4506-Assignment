@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/components/teacher/viewStudentInfoPage.css">
+    <title>Document</title>
+</head>
+    <table id="students-attendance" class="table table-striped" style="width: 100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Class</th>
+                <th>Gender</th>
+                <th>Name</th>
+                <th>Birthday</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>200000001</td>
+                <td>2B</td>
+                <td>Male</td>
+                <td>Harry Potter</td>
+                <td>2000/01/01</td>
+                <td>harrypotter@gmail.com</td>
+                <td>21232123</td>
+                <td>Home</td>
+            </tr>
+            <tr>
+                <td>200000002</td>
+                <td>2D</td>
+                <td>Male</td>
+                <td>Harry</td>
+                <td>2000/02/02</td>
+                <td>harry@gmail.com</td>
+                <td>31233123</td>
+                <td>Home</td>
+            </tr>
+            <tr>
+                <td>200000001</td>
+                <td>2B</td>
+                <td>Male</td>
+                <td>Harry Potter</td>
+                <td>2000/01/01</td>
+                <td>harrypotter@gmail.com</td>
+                <td>21232123</td>
+                <td>Home</td>
+            </tr>
+            <tr>
+                <td>200000002</td>
+                <td>2D</td>
+                <td>Male</td>
+                <td>Harry</td>
+                <td>2000/02/02</td>
+                <td>harry@gmail.com</td>
+                <td>31233123</td>
+                <td>Home</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+              <th>ID</th>
+              <th>Class</th>
+              <th>Gender</th>
+              <th>Name</th>
+              <th>Birthday</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Address</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div
+      class="modal fade"
+      id="edit-student-info-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Edit Student Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="change-student-info-form">
+              <div class="mb-3">
+                <label for="role">Student ID</label>
+                <select
+                  id="student-id-select-menu"
+                  class="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected disabled>Select a student ID</option>
+                  <option value="200000001">200000001 - Harry Potter</option>
+                  <option value="200000002">200000002 - Harry</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Birthday</label
+                >
+                <input type="text" class="form-control" id="date-picker" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phoneNumber"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Address</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <script src="../../js/components/teacher/viewStudentInfoPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../css/components/teacher/classAllocation.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="classAllocation-container">
+      <!-- Button trigger modal -->
+      <button
+        id="create-class-btn"
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#create-class-modal"
+      >
+        Create new class
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="create-class-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Create new class
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="create-class-form">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Class Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="class-student-lists" class="form-label"
+                    >Students</label
+                  >
+                  <select
+                    multiple="multiple"
+                    size="10"
+                    name="create-class-students"
+                  >
+                    <option value="200000001">
+                      200000001 - Harry Potter
+                    </option>
+                    <option value="200000002">
+                      200000002 - Harry
+                    </option>
+                    <option value="payee3">
+                      200000003 - Peter
+                    </option>
+                    <option value="payee4">
+                      200000004 - Mary
+                    </option>
+                    <option value="payee5">
+                      200000005 - John
+                    </option>
+                    <option value="payee6">
+                      200000006 - Jay
+                    </option>
+                    <option value="payee7">
+                      200000007 - Paul
+                    </option>
+                    <option value="payee8">
+                      200000008 - Audrey
+                    </option>
+                    <option value="payee9">
+                      200000009 - Nicole
+                    </option>
+                    <option value="payee10">
+                      200000010 - Maggie
+                    </option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="classes-container">
+        <a href="/teacher/classInformation.html" class="class-box">
+          Class 2B
+        </a>
+        <a href="/teacher/classInformation.html" class="class-box">
+          Class 2C
+        </a>
+        <a href="/teacher/classInformation.html" class="class-box">
+          Class 1D
+        </a>
+      </div>
+    </div>
+
+    <script src="../../js/components/teacher/classAllocation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/components/student/attendanceRecordPage.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="attendance-table-container">
+      <table id="date-searching" border="0" cellspacing="5" cellpadding="5">
+        <tbody>
+          <tr>
+            <td>Minimum date:</td>
+            <td><input type="text" id="min" name="min" /></td>
+          </tr>
+          <tr>
+            <td>Maximum date:</td>
+            <td><input type="text" id="max" name="max" /></td>
+          </tr>
+          <tr>
+						<td>
+              <button
+              id="upload-file-btn"
+              class="btn btn-primary"
+            >Upload sick leave certificate
+            </button>
+            <input type="file" id="upload-file-hidden" hidden>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="attendance" class="table table-striped" style="width: 100%">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Attendance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-01-01</td>
+            <td>07:52:01</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>2021-01-02</td>
+            <td>\</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>2020-01-03</td>
+            <td>07:30:52</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Attendance</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <script src="../../js/components/student/attendanceRecordPage.js"></script>
+  </body>
+</html>

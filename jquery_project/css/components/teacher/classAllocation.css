@@ -1,0 +1,102 @@
+.classAllocation-container{
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+#create-class-btn{
+    background-color: royalblue;
+    margin-bottom: 100px;
+    transition: .15s ease-in-out;
+}
+
+#create-class-btn:hover{
+    box-shadow: rgb(11, 94, 105) inset 5px 5px 15px;
+    text-shadow: 1px 1px 15px;
+}
+
+.classes-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.class-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(217deg, rgba(183, 148, 206,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(150, 163, 211,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(133, 192, 255,.8), rgba(0,0,255,0) 70.71%);
+    box-shadow: rgba(0, 0, 0, 0.24) inset 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.class-box:hover{
+    color: rgb(147, 81, 252);
+    text-shadow: 2px 2px 10px rgb(172, 121, 255) ;
+    background-color: rgb(133, 192, 255);
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+.bootstrap-duallistbox-container{
+    padding: 10px 0px;
+    border: 1px solid #dddddd;
+}
+
+.moveall,.removeall {
+  border: 1px solid #ccc !important;
+}
+
+.moveall:hover,.removeall:hovrt {
+    background: #efefef;
+}
+
+.moveall::after {
+  content: attr(title);
+}
+
+.removeall::after {
+  content: attr(title);
+}
+
+.form-control option {
+    padding: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+.box1 > label, .box2 > label{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: royalblue;
+}
+
+.info-container{
+    display: block;
+    margin: 10px 0px;
+}
+
+.info{
+    display: block;
+    margin-right: 10px;
+}
+
+.info-container button{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: orange;
+}
+
+#bootstrap-duallistbox-nonselected-list_create-class-students,
+#bootstrap-duallistbox-selected-list_create-class-students{
+    height: 300px !important;
+}

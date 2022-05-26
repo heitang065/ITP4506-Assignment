@@ -1,0 +1,25 @@
+#main-panel {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(10vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../img/indexBG.png") no-repeat center;
+  background-size: cover;
+}
+
+.toast {
+  opacity: 1 !important;
+}
+
+#toast-container > div {
+  opacity: 1 !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  #main-panel {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+  }
+}
